@@ -1,5 +1,5 @@
 import time
-
+from to_arduino import Arduino
 import cv2
 import speech_recognition as sr
 
@@ -9,6 +9,7 @@ class speech_to_asl:
         self.detected_text = ""
         self.words = []
         self.letters = []
+        self.arduino = Arduino()
 
     def detect_speech(self):
         r = sr.Recognizer()
@@ -24,7 +25,10 @@ class speech_to_asl:
         self.words.append(self.detected_text.split())
         # print(self.words)
         self.letters = list(self.detected_text)
-        # print(self.letters)
+        print(self.letters)
+        for letter in self.letters:
+            self.arduino.send(letter)
+            time.sleep(10)
 
     def display_letters(self):
         default = cv2.imread('Resources/ASL/Space.png')
