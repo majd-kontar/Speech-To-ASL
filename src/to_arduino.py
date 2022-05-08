@@ -9,7 +9,8 @@ class Arduino:
     def send(self, x):
         self.ardu.write(bytes(x, 'utf-8'))
         time.sleep(0.05)
-        data = self.ardu.readline()
+        data = str(self.ardu.readline())
+        data = data[data.index('\'') + 1:-1]
         return data
 
 
