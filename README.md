@@ -19,6 +19,7 @@ Converts Speech to American Sign Language
 ### MATLAB
 ![MATLAB](https://user-images.githubusercontent.com/97162452/167585680-59272525-0923-4f89-aaca-a4fca306f695.png)
 
-* Simulink model that displays all the ASL letters
+* Simulink model of a hand
 * Controlled by servo motors
+* Is able to display all the ASL letters
 
