@@ -11,12 +11,12 @@ Converts Speech to American Sign Language
 * Converts speech to text.
 * Sneds the letters to the Arduino
 
-###Arduino
+### Arduino
 
 * Receives the letters through pyserial.
 * Controls the servos to convey the letter received
 
-###MATLAB
+### MATLAB
 ![MATLAB](https://user-images.githubusercontent.com/97162452/167585680-59272525-0923-4f89-aaca-a4fca306f695.png)
 
 * Simulink model that displays all the ASL letters
