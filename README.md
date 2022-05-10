@@ -1,5 +1,5 @@
 # Speech-To-ASL
-Changes Speech to American Sign Language
+Converts Speech to American Sign Language
 
 ![Hand](https://user-images.githubusercontent.com/97162452/167584723-996113b8-c4d6-47f8-a1f2-2b8b7b80813e.png)
 
